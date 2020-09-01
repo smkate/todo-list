@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="todo-app.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>To do list</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-title">
+            <h1>ToDo List.</h1>
+            <span>Control your time</span>
+        </div>
+        <!-- <div class="select">
+            <select name="todos" class="filter-todo">
+                <option value="all">All</option>
+                <option value="completed">Competed</option>
+                <option value="uncompleted">Uncompleted</option>
+            </select>
+        </div> -->
+        <div class="filter-todo">
+            <ul class="todos">
+                <li name="all">All</li>
+                <li name="completed">Done</li>
+                <li name="uncompleted">Uncompleted</li>
+            </ul>
+        </div>
+    </header>
+    <main class="frame">
+        <div class="frame-title-1">
+            Be more focusing
+        </div>
+        <div class="frame-title-2">
+            Be more productive
+        </div>
+        <span class="frame-line"></span>
+        <div class="doto-form">
+            <form>
+                <input type="text" class="todo-input">
+                <button class="todo-button" type="submit">
+                    <i class="fas fa-plus-square"></i>
+                </button>
+            </form>
+            <div class="todo-container">
+                <ul class="todo-list"></ul>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
